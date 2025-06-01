@@ -20,7 +20,7 @@ A web-based tool for generating Apache .htaccess files with common configuration
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/dogushan.balci/htaccess-generator.git
+git clone https://github.com/dogushan-balci/htaccess-generator.git
 ```
 
 2. Open `index.html` in your web browser

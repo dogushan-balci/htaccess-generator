@@ -14,7 +14,7 @@ A web-based tool for generating Apache .htaccess files with common configuration
 
 ## Live Demo
 
-[View Live Demo](https://your-demo-url.com)
+[View Live Demo](https://dogushanbalci.com/tools/htaccess-generator)
 
 ## Installation
 

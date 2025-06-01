@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free .htaccess Generator Tool | Create .htaccess File Online</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>.htaccess Generator</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#generator" class="active">Generator</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="generator" class="generator-section">
+            <div class="container">
+                <h2 class="section-title">Generate Your .htaccess File</h2>
+                <p class="section-description">Create and customize your .htaccess file with our easy-to-use generator. Select the options you need and get your configuration instantly.</p>
+                
+                <div class="generator-grid">
+                    <div class="options-panel">
+                        <div class="panel-section">
+                            <h3>Templates</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="templates-wordpress">
+                                    <span>WordPress</span>
+                                    <i class="info-icon" data-tooltip="WordPress specific .htaccess rules including permalink structure and security measures"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="templates-laravel">
+                                    <span>Laravel</span>
+                                    <i class="info-icon" data-tooltip="Laravel specific .htaccess rules for routing and security"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="templates-joomla">
+                                    <span>Joomla</span>
+                                    <i class="info-icon" data-tooltip="Joomla specific .htaccess rules including SEF URLs and security"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="templates-drupal">
+                                    <span>Drupal</span>
+                                    <i class="info-icon" data-tooltip="Drupal specific .htaccess rules for clean URLs and security"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="templates-magento">
+                                    <span>Magento</span>
+                                    <i class="info-icon" data-tooltip="Magento specific .htaccess rules for e-commerce functionality"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>Redirects</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="redirects-www">
+                                    <span>Force www</span>
+                                    <i class="info-icon" data-tooltip="Redirect non-www to www version of your domain"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="redirects-https">
+                                    <span>Force HTTPS</span>
+                                    <i class="info-icon" data-tooltip="Redirect HTTP to HTTPS for secure connections"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="redirects-trailingSlash">
+                                    <span>Remove Trailing Slash</span>
+                                    <i class="info-icon" data-tooltip="Remove trailing slashes from URLs"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="redirects-oldUrls">
+                                    <span>Old URL Redirects</span>
+                                    <i class="info-icon" data-tooltip="Set up redirects for old URLs to new ones"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>Security</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-directoryListing">
+                                    <span>Disable Directory Listing</span>
+                                    <i class="info-icon" data-tooltip="Prevent directory listing for better security"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-securityHeaders">
+                                    <span>Add Security Headers</span>
+                                    <i class="info-icon" data-tooltip="Add security headers like X-Frame-Options, X-XSS-Protection, etc."></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-ipBlocking">
+                                    <span>IP Blocking</span>
+                                    <i class="info-icon" data-tooltip="Block specific IP addresses from accessing your site"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-hotlinkProtection">
+                                    <span>Hotlink Protection</span>
+                                    <i class="info-icon" data-tooltip="Prevent other sites from using your images"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-fileAccess">
+                                    <span>File Access Restrictions</span>
+                                    <i class="info-icon" data-tooltip="Restrict access to sensitive files"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-xssProtection">
+                                    <span>XSS Protection</span>
+                                    <i class="info-icon" data-tooltip="Add XSS protection headers"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-sqlInjection">
+                                    <span>SQL Injection Protection</span>
+                                    <i class="info-icon" data-tooltip="Add rules to prevent SQL injection attacks"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="security-uploadRestrictions">
+                                    <span>Upload Restrictions</span>
+                                    <i class="info-icon" data-tooltip="Restrict file uploads to specific types"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>Performance</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="performance-browserCaching">
+                                    <span>Enable Browser Caching</span>
+                                    <i class="info-icon" data-tooltip="Set browser caching rules for better performance"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="performance-gzipCompression">
+                                    <span>Enable Gzip Compression</span>
+                                    <i class="info-icon" data-tooltip="Enable Gzip compression for faster page loads"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="performance-keepAlive">
+                                    <span>Enable Keep-Alive</span>
+                                    <i class="info-icon" data-tooltip="Enable Keep-Alive for persistent connections"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="performance-etags">
+                                    <span>Enable ETags</span>
+                                    <i class="info-icon" data-tooltip="Enable ETags for better caching"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="performance-varyHeader">
+                                    <span>Add Vary Header</span>
+                                    <i class="info-icon" data-tooltip="Add Vary header for better caching"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="performance-cacheControl">
+                                    <span>Cache Control</span>
+                                    <i class="info-icon" data-tooltip="Set cache control headers"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>Error Pages</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="errorPages-error400">
+                                    <span>400 Bad Request</span>
+                                    <i class="info-icon" data-tooltip="Custom error page for 400 Bad Request errors"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="errorPages-error401">
+                                    <span>401 Unauthorized</span>
+                                    <i class="info-icon" data-tooltip="Custom error page for 401 Unauthorized errors"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="errorPages-error403">
+                                    <span>403 Forbidden</span>
+                                    <i class="info-icon" data-tooltip="Custom error page for 403 Forbidden errors"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="errorPages-error404">
+                                    <span>404 Not Found</span>
+                                    <i class="info-icon" data-tooltip="Custom error page for 404 Not Found errors"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="errorPages-error500">
+                                    <span>500 Internal Server Error</span>
+                                    <i class="info-icon" data-tooltip="Custom error page for 500 Internal Server Error"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="errorPages-error503">
+                                    <span>503 Service Unavailable</span>
+                                    <i class="info-icon" data-tooltip="Custom error page for 503 Service Unavailable errors"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>PHP Settings</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="php-hideErrors">
+                                    <span>Hide PHP Errors</span>
+                                    <i class="info-icon" data-tooltip="Hide PHP errors from users"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="php-memoryLimit">
+                                    <span>Set Memory Limit</span>
+                                    <i class="info-icon" data-tooltip="Set PHP memory limit"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="php-uploadLimit">
+                                    <span>Set Upload Limit</span>
+                                    <i class="info-icon" data-tooltip="Set PHP upload file size limit"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="php-maxExecutionTime">
+                                    <span>Set Max Execution Time</span>
+                                    <i class="info-icon" data-tooltip="Set maximum PHP script execution time"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>File & Directory</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="file-defaultIndex">
+                                    <span>Set Default Index</span>
+                                    <i class="info-icon" data-tooltip="Set default index files for directories"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="file-directoryAccess">
+                                    <span>Directory Access Control</span>
+                                    <i class="info-icon" data-tooltip="Control access to directories"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="file-fileTypeRestrictions">
+                                    <span>File Type Restrictions</span>
+                                    <i class="info-icon" data-tooltip="Restrict access to specific file types"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="file-directoryPassword">
+                                    <span>Directory Password Protection</span>
+                                    <i class="info-icon" data-tooltip="Add password protection to directories"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h3>Custom Rules</h3>
+                            <div class="option-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="custom-rewriteRules">
+                                    <span>Custom Rewrite Rules</span>
+                                    <i class="info-icon" data-tooltip="Add custom URL rewrite rules"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="custom-headers">
+                                    <span>Custom Headers</span>
+                                    <i class="info-icon" data-tooltip="Add custom HTTP headers"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="custom-envVars">
+                                    <span>Environment Variables</span>
+                                    <i class="info-icon" data-tooltip="Set environment variables for your application"></i>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="custom-mimeTypes">
+                                    <span>MIME Types</span>
+                                    <i class="info-icon" data-tooltip="Add custom MIME type definitions"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-panel">
+                        <div class="preview-header">
+                            <h3>Preview</h3>
+                            <div class="preview-actions">
+                                <button id="copyBtn" class="btn">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                                <button id="downloadBtn" class="btn">
+                                    <i class="fas fa-download"></i> Download
+                                </button>
+                            </div>
+                        </div>
+                        <div class="preview-content">
+                            <pre id="htaccessPreview"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Created by <a href="https://dogushanbalci.com" target="_blank">Doğuşhan BALCI</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
